@@ -1,0 +1,703 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/dariusk/pos-js">pos (v0.4.2)</a>
+</h1>
+<h4>fasttag part of speech tagger implementation</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos">module pos</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules">
+            function <span class="apidocSignatureSpan">pos.</span>BrillTransformationRules
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Lexer">
+            function <span class="apidocSignatureSpan">pos.</span>Lexer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Tagger">
+            function <span class="apidocSignatureSpan">pos.</span>Tagger
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pos.</span>BrillTransformationRules.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pos.</span>Lexer.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pos.</span>Tagger.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos.BrillTransformationRules">module pos.BrillTransformationRules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules.BrillTransformationRules">
+            function <span class="apidocSignatureSpan">pos.</span>BrillTransformationRules
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos.BrillTransformationRules.prototype">module pos.BrillTransformationRules.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules.prototype.appendRule">
+            function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>appendRule
+            <span class="apidocSignatureSpan">(rule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules.prototype.getRule">
+            function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>getRule
+            <span class="apidocSignatureSpan">(index)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules.prototype.getRules">
+            function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>getRules
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules.prototype.setRule">
+            function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>setRule
+            <span class="apidocSignatureSpan">(index, rule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.BrillTransformationRules.prototype.setRules">
+            function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>setRules
+            <span class="apidocSignatureSpan">(newRules)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos.Lexer">module pos.Lexer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Lexer.Lexer">
+            function <span class="apidocSignatureSpan">pos.</span>Lexer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos.Lexer.prototype">module pos.Lexer.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Lexer.prototype.lex">
+            function <span class="apidocSignatureSpan">pos.Lexer.prototype.</span>lex
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos.Tagger">module pos.Tagger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Tagger.Tagger">
+            function <span class="apidocSignatureSpan">pos.</span>Tagger
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pos.Tagger.prototype">module pos.Tagger.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Tagger.prototype.extendLexicon">
+            function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>extendLexicon
+            <span class="apidocSignatureSpan">(lexicon)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Tagger.prototype.prettyPrint">
+            function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>prettyPrint
+            <span class="apidocSignatureSpan">(taggedWords)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Tagger.prototype.tag">
+            function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>tag
+            <span class="apidocSignatureSpan">(words)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pos.Tagger.prototype.wordInLexicon">
+            function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>wordInLexicon
+            <span class="apidocSignatureSpan">(word)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos" id="apidoc.module.pos">module pos</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules" id="apidoc.element.pos.BrillTransformationRules">
+        function <span class="apidocSignatureSpan">pos.</span>BrillTransformationRules
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrillTransformationRules() {
+  this.rules = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Lexer" id="apidoc.element.pos.Lexer">
+        function <span class="apidocSignatureSpan">pos.</span>Lexer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Lexer(){
+  // URLS can contain IDS, so first urls, then ids
+  // then split by then numbers, then whitespace, then email and finally punctuation
+  // this.regexs = [re.urls, re.ids, re.number, re.space, re.email, re.punctuation];
+  this.regexs = [
+    re.urls, re.ids, re.time, re.number, re.space, re.email, re.punctuation
+  ];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+`$ npm install pos`
+
+USAGE:
+
+```javascript
+var pos = require('pos');
+var words = new pos.<span class="apidocCodeKeywordSpan">Lexer</span>().lex('This is some sample text. This text can contain
+ multiple sentences.');
+var tagger = new pos.Tagger();
+var taggedWords = tagger.tag(words);
+for (i in taggedWords) {
+var taggedWord = taggedWords[i];
+var word = taggedWord[0];
+var tag = taggedWord[1];
+console.log(word + " /" + tag);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Tagger" id="apidoc.element.pos.Tagger">
+        function <span class="apidocSignatureSpan">pos.</span>Tagger
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function POSTagger(){
+    this.lexicon = require('./lexicon');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`$ npm install pos`
+
+USAGE:
+
+```javascript
+var pos = require('pos');
+var words = new pos.Lexer().lex('This is some sample text. This text can contain multiple sentences.');
+var tagger = new pos.<span class="apidocCodeKeywordSpan">Tagger</span>();
+var taggedWords = tagger.tag(words);
+for (i in taggedWords) {
+    var taggedWord = taggedWords[i];
+    var word = taggedWord[0];
+    var tag = taggedWord[1];
+    console.log(word + " /" + tag);
+}
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos.BrillTransformationRules" id="apidoc.module.pos.BrillTransformationRules">module pos.BrillTransformationRules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules.BrillTransformationRules" id="apidoc.element.pos.BrillTransformationRules.BrillTransformationRules">
+        function <span class="apidocSignatureSpan">pos.</span>BrillTransformationRules
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrillTransformationRules() {
+  this.rules = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos.BrillTransformationRules.prototype" id="apidoc.module.pos.BrillTransformationRules.prototype">module pos.BrillTransformationRules.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules.prototype.appendRule" id="apidoc.element.pos.BrillTransformationRules.prototype.appendRule">
+        function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>appendRule
+        <span class="apidocSignatureSpan">(rule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">appendRule = function (rule) {
+  this.rules[this.rules.length] = rule;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules.prototype.getRule" id="apidoc.element.pos.BrillTransformationRules.prototype.getRule">
+        function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>getRule
+        <span class="apidocSignatureSpan">(index)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRule = function (index) {
+  return(this.rules[index]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules.prototype.getRules" id="apidoc.element.pos.BrillTransformationRules.prototype.getRules">
+        function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>getRules
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRules = function () {
+  return(this.rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules.prototype.setRule" id="apidoc.element.pos.BrillTransformationRules.prototype.setRule">
+        function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>setRule
+        <span class="apidocSignatureSpan">(index, rule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setRule = function (index, rule) {
+  this.rules[index] = rule;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.BrillTransformationRules.prototype.setRules" id="apidoc.element.pos.BrillTransformationRules.prototype.setRules">
+        function <span class="apidocSignatureSpan">pos.BrillTransformationRules.prototype.</span>setRules
+        <span class="apidocSignatureSpan">(newRules)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setRules = function (newRules) {
+  this.rules = newRules;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos.Lexer" id="apidoc.module.pos.Lexer">module pos.Lexer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Lexer.Lexer" id="apidoc.element.pos.Lexer.Lexer">
+        function <span class="apidocSignatureSpan">pos.</span>Lexer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Lexer(){
+  // URLS can contain IDS, so first urls, then ids
+  // then split by then numbers, then whitespace, then email and finally punctuation
+  // this.regexs = [re.urls, re.ids, re.number, re.space, re.email, re.punctuation];
+  this.regexs = [
+    re.urls, re.ids, re.time, re.number, re.space, re.email, re.punctuation
+  ];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+`$ npm install pos`
+
+USAGE:
+
+```javascript
+var pos = require('pos');
+var words = new pos.<span class="apidocCodeKeywordSpan">Lexer</span>().lex('This is some sample text. This text can contain
+ multiple sentences.');
+var tagger = new pos.Tagger();
+var taggedWords = tagger.tag(words);
+for (i in taggedWords) {
+var taggedWord = taggedWords[i];
+var word = taggedWord[0];
+var tag = taggedWord[1];
+console.log(word + " /" + tag);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos.Lexer.prototype" id="apidoc.module.pos.Lexer.prototype">module pos.Lexer.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Lexer.prototype.lex" id="apidoc.element.pos.Lexer.prototype.lex">
+        function <span class="apidocSignatureSpan">pos.Lexer.prototype.</span>lex
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lex = function (string){
+  var array = []
+    , node = new LexerNode(string, this.regexs[0], this.regexs.slice(1));
+
+  node.fillArray(array);
+  return array;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+`$ npm install pos`
+
+USAGE:
+
+```javascript
+var pos = require('pos');
+var words = new pos.Lexer().<span class="apidocCodeKeywordSpan">lex</span>('This is some sample text. This text can contain
+ multiple sentences.');
+var tagger = new pos.Tagger();
+var taggedWords = tagger.tag(words);
+for (i in taggedWords) {
+var taggedWord = taggedWords[i];
+var word = taggedWord[0];
+var tag = taggedWord[1];
+console.log(word + " /" + tag);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos.Tagger" id="apidoc.module.pos.Tagger">module pos.Tagger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Tagger.Tagger" id="apidoc.element.pos.Tagger.Tagger">
+        function <span class="apidocSignatureSpan">pos.</span>Tagger
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function POSTagger(){
+    this.lexicon = require('./lexicon');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`$ npm install pos`
+
+USAGE:
+
+```javascript
+var pos = require('pos');
+var words = new pos.Lexer().lex('This is some sample text. This text can contain multiple sentences.');
+var tagger = new pos.<span class="apidocCodeKeywordSpan">Tagger</span>();
+var taggedWords = tagger.tag(words);
+for (i in taggedWords) {
+    var taggedWord = taggedWords[i];
+    var word = taggedWord[0];
+    var tag = taggedWord[1];
+    console.log(word + " /" + tag);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pos.Tagger.prototype" id="apidoc.module.pos.Tagger.prototype">module pos.Tagger.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Tagger.prototype.extendLexicon" id="apidoc.element.pos.Tagger.prototype.extendLexicon">
+        function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>extendLexicon
+        <span class="apidocSignatureSpan">(lexicon)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extendLexicon = function (lexicon) {
+  for (var word in lexicon) {
+    if (!this.lexicon.hasOwnProperty(word)) {
+      this.lexicon[word] = lexicon[word];
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var taggedWord = taggedWords[i];
+    var word = taggedWord[0];
+    var tag = taggedWord[1];
+    console.log(word + " /" + tag);
+}
+
+// extend the lexicon
+tagger.<span class="apidocCodeKeywordSpan">extendLexicon</span>({'Obama': ['NNP']});
+tagger.tag(['Mr', 'Obama']);
+// --&gt; [[ 'Mr', 'NNP' ], [ 'Obama', 'NNP' ]]
+```
+
+ACKNOWLEDGEMENTS:
+
+Thanks to Mark Watson for writing FastTag, which served as the basis for jspos.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Tagger.prototype.prettyPrint" id="apidoc.element.pos.Tagger.prototype.prettyPrint">
+        function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>prettyPrint
+        <span class="apidocSignatureSpan">(taggedWords)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prettyPrint = function (taggedWords) {
+	for (i in taggedWords) {
+        print(taggedWords[i][0] + "(" + taggedWords[i][1] + ")");
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Tagger.prototype.tag" id="apidoc.element.pos.Tagger.prototype.tag">
+        function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>tag
+        <span class="apidocSignatureSpan">(words)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tag = function (words) {
+  var taggedSentence = new Array(words.length);
+
+  // Initialise taggedSentence with words and initial categories
+  for (var i = 0, size = words.length; i &lt; size; i++) {
+    taggedSentence[i] = new Array(2);
+    taggedSentence[i][0] = words[i];
+    // lexicon maps a word to an array of possible categories
+    var ss = this.lexicon[words[i]];
+    // 1/22/2002 mod (from Lisp code): if not in hash, try lower case:
+    if (!ss)
+      ss = this.lexicon[words[i].toLowerCase()];
+    if (!ss &amp;&amp; (words[i].length === 1))
+      taggedSentence[i][1] = words[i] + "^";
+    // We need to catch scenarios where we pass things on the prototype
+    // that aren't in the lexicon: "constructor" breaks this otherwise
+    if (!ss || (Object.prototype.toString.call(ss) !== '[object Array]'))
+      taggedSentence[i][1] = "NN";
+    else
+      taggedSentence[i][1] = ss[0];
+  }
+
+  // Apply transformation rules
+  taggedSentence.forEach(function(taggedWord, index) {
+    transformationRules.getRules().forEach(function(rule) {
+      rule(taggedSentence, index);
+    });
+  });
+  return taggedSentence;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+USAGE:
+
+```javascript
+var pos = require('pos');
+var words = new pos.Lexer().lex('This is some sample text. This text can contain multiple sentences.');
+var tagger = new pos.Tagger();
+var taggedWords = tagger.<span class="apidocCodeKeywordSpan">tag</span>(words);
+for (i in taggedWords) {
+    var taggedWord = taggedWords[i];
+    var word = taggedWord[0];
+    var tag = taggedWord[1];
+    console.log(word + " /" + tag);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pos.Tagger.prototype.wordInLexicon" id="apidoc.element.pos.Tagger.prototype.wordInLexicon">
+        function <span class="apidocSignatureSpan">pos.Tagger.prototype.</span>wordInLexicon
+        <span class="apidocSignatureSpan">(word)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">wordInLexicon = function (word){
+    var ss = this.lexicon[word];
+    if (ss != null)
+        return true;
+    // 1/22/2002 mod (from Lisp code): if not in hash, try lower case:
+    if (!ss)
+        ss = this.lexicon[word.toLowerCase()];
+    if (ss)
+        return true;
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
